@@ -345,7 +345,7 @@
 								</a>
 								<div class="title-one mt-25 mb-25 lg-mb-20">
 									<h2 class="text-white main-font">
-										Let’s get started It’s <span style="color: #00BF58;">simple.</span>
+										Let’s get started It’s <span style="color: #FFD500;">simple.</span>
 									</h2>
 								</div>
 								<p class="text-white text-md">

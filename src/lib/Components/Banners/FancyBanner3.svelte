@@ -38,7 +38,7 @@
 							</a>
 							<div class="title-one mt-35 lg-mt-30 mb-30 lg-mb-20">
 								<h2 class="fw-600 text-white">
-									Let’s get started It’s <span style="color: #00BF58;">simple.</span>
+									Let’s get started It’s <span style="color: #FFD500;">simple.</span>
 								</h2>
 							</div>
 							<p class="text-white">

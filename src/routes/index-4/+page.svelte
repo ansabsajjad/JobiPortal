@@ -8,6 +8,7 @@
 	import Category1 from './../../lib/Components/Category/Category1.svelte';
 	import HeroBanner4 from './../../lib/Components/Banners/HeroBanner4.svelte';
 	import Header from '$lib/Header.svelte';
+	import HowToWork2 from './../../lib/Components/HowToWork/HowToWork2.svelte';
 	import { useAnimation } from '$lib/js/animations.js';
 	import Model1 from '../../lib/Components/Model/Model1.svelte';
 	import BackToTop from '$lib/BackToTop.svelte';
@@ -62,7 +63,7 @@
 			<!--/.right-widget-->
 		</Header>
 		<HeroBanner4 />
-		<Category1 addonClasses={'position-relative mt-120 lg-mt-80'}>
+		<!-- <Category1 addonClasses={'position-relative mt-120 lg-mt-80'}>
 			<div slot="container" class="container">
 				<div class="row justify-content-between align-items-center">
 					<div class="col-lg-8">
@@ -91,7 +92,7 @@
 							<div class="total-job">12k+ Jobs</div>
 						</a>
 					</div>
-					<!-- /.card-style-one -->
+					
 					<div
 						use:useAnimation
 						class="card-style-one text-center mt-20 wow fadeInUp"
@@ -110,7 +111,7 @@
 							<div class="total-job">8k+ Jobs</div>
 						</a>
 					</div>
-					<!-- /.card-style-one -->
+				
 					<div
 						use:useAnimation
 						class="card-style-one text-center mt-20 wow fadeInUp"
@@ -129,7 +130,7 @@
 							<div class="total-job">10k+ Jobs</div>
 						</a>
 					</div>
-					<!-- /.card-style-one -->
+				
 					<div
 						use:useAnimation
 						class="card-style-one text-center mt-20 wow fadeInUp"
@@ -148,7 +149,7 @@
 							<div class="total-job">6k+ Jobs</div>
 						</a>
 					</div>
-					<!-- /.card-style-one -->
+				
 					<div
 						use:useAnimation
 						class="card-style-one text-center mt-20 wow fadeInUp"
@@ -167,7 +168,7 @@
 							<div class="total-job">7k+ Jobs</div>
 						</a>
 					</div>
-					<!-- /.card-style-one -->
+					
 					<div
 						use:useAnimation
 						class="card-style-one text-center mt-20 wow fadeInUp"
@@ -186,18 +187,104 @@
 							<div class="total-job">17k+ Jobs</div>
 						</a>
 					</div>
-					<!-- /.card-style-one -->
+					
 				</div>
-				<!-- /.card-wrapper -->
+				
 				<div class="text-center mt-40 d-lg-none">
 					<a href="/job-grid-v2" class="btn-six">Explore all fields</a>
 				</div>
 			</div>
-		</Category1>
-		<FancyBanner4 />
+		</Category1> -->
+
+
+
+
+		<HowToWork2 addSectionClasses={'position-relative pt-130 lg-pt-80'}>
+			<div slot="container" class="container">
+				<div class="title-one text-center mb-70 lg-mb-30">
+					<h2 class="main-font">How it’s Work?</h2>
+				</div>
+
+				<div class="border-bottom">
+					<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6">
+							<div
+								use:useAnimation
+								class="card-style-five text-center position-relative mt-25 pb-70 lg-pb-20 wow fadeInUp"
+							>
+								<div
+									class="icon rounded-circle d-flex align-items-center justify-content-center m-auto"
+								>
+									<img
+										src="/assets/images/lazy.svg"
+										data-src="/assets/images/icon/icon_43.svg"
+										alt=""
+										class="lazy-img"
+									/>
+								</div>
+								<div class="title fw-500 text-lg text-dark mt-25 lg-mt-20 mb-10">
+									Create Account
+								</div>
+								<p>It’s very easy to open an account and start your journey.</p>
+							</div>
+							<!-- /.card-style-five -->
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div
+								use:useAnimation
+								class="card-style-five text-center position-relative mt-25 pb-70 lg-pb-20 arrow-style wow fadeInUp"
+								data-wow-delay="0.1s"
+							>
+								<div
+									class="icon rounded-circle d-flex align-items-center justify-content-center m-auto"
+								>
+									<img
+										src="/assets/images/lazy.svg"
+										data-src="/assets/images/icon/icon_44.svg"
+										alt=""
+										class="lazy-img"
+									/>
+								</div>
+								<div class="title fw-500 text-lg text-dark mt-25 lg-mt-20 mb-10">
+									Complete your profile.
+								</div>
+								<p>Complete your profile with all the info to get attention of client.</p>
+							</div>
+							<!-- /.card-style-five -->
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div
+								use:useAnimation
+								class="card-style-five text-center position-relative mt-25 pb-70 lg-pb-20 wow fadeInUp"
+								data-wow-delay="0.19s"
+							>
+								<div
+									class="icon rounded-circle d-flex align-items-center justify-content-center m-auto"
+								>
+									<img
+										src="/assets/images/lazy.svg"
+										data-src="/assets/images/icon/icon_45.svg"
+										alt=""
+										class="lazy-img"
+									/>
+								</div>
+								<div class="title fw-500 text-lg text-dark mt-25 lg-mt-20 mb-10">
+									Apply job or hire.
+								</div>
+								<p>Apply & get your preferable jobs with all the requirments and get it.</p>
+							</div>
+							<!-- /.card-style-five -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</HowToWork2>
+
+
+		<!-- <FancyBanner4 /> -->
 		<JobListing />
-		<Feedack />
-		<Features1 addSectionClasses={'position-relative pt-180 xl-pt-150 lg-pt-100'}>
+		<!-- <Feedack /> -->
+		<!-- <Features1 addSectionClasses={'position-relative pt-180 xl-pt-150 lg-pt-100'}> 
 			<div slot="row" class="row align-items-center">
 				<div class="col-lg-5 order-lg-last">
 					<div use:useAnimation class="ps-lg-4 wow fadeInRight">
@@ -258,7 +345,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- /.accordion-style-one -->
+						
 						<a href="/candidates-v2" class="btn-seven border6 mt-70 lg-mt-40">Find Talents</a>
 					</div>
 				</div>
@@ -306,9 +393,9 @@
 					</div>
 				</div>
 			</div>
-		</Features1>
-		<Faq />
-		<JobPortel addonClasses={'top-border pt-60 lg-pt-40 pb-65 lg-pb-40'}>
+		</Features1>-->
+		
+		<!-- <JobPortel addonClasses={'top-border pt-60 lg-pt-40 pb-65 lg-pb-40'}>
 			<div slot="btn-group" class="col-lg-5">
 				<ul class="btn-group style-none d-flex justify-content-center justify-content-lg-end">
 					<li class="me-2">
@@ -317,7 +404,8 @@
 					<li class="ms-2"><a href="/signup" class="btn-five border6">Post a job</a></li>
 				</ul>
 			</div>
-		</JobPortel>
+		</JobPortel> -->
+		<Faq />
 		<Footer1 />
 		<BackToTop />
 		<Model1 />
