@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-sm-6 mt-30">
-				<div class="title fw-500" style="color: #FFD500;">Trending Skills</div>
+				<div class="title fw-500" style="color: #183c57;">Trending Skills</div>
 				<ul class="list-item style-none">
 					<li><a href="/job-list-v2">Blockchain</a></li>
 					<li><a href="/job-list-v2">Node.js</a></li>

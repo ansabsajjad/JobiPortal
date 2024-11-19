@@ -122,7 +122,7 @@
             font-size: 11px;
             font-weight: 500;
             margin: 0;
-            color: rgba($color: #ffbc13, $alpha: 0.5);
+            color: rgba($color: #183c56, $alpha: 0.5);
         }
     }
     .logout-btn {
@@ -479,7 +479,7 @@
                 }
                 .meta {
                     font-size: 14px;
-                    color: rgba($color: #ffbc13, $alpha: 0.5);
+                    color: rgba($color: #183c56, $alpha: 0.5);
                 }
             }
             .job-action {
@@ -732,7 +732,7 @@
                 margin: 10px 3px 0;
                 padding: 0 14px;
                 height: 25px;
-                background: rgba($color: #31795A, $alpha: 0.1);
+                background: rgba($color: #f5b41c, $alpha: 0.1);
                 border-radius: 30px;
                 @include transition(0.2s);
                 &:hover {
@@ -874,7 +874,7 @@
             padding: 12px 15px;
             font-size: 15px;
             font-weight: 500;
-            color: #ffbc13;
+            color: #183c56;
             background: #F0F5F3;
             &:first-child {
                 border-radius: 7px 0 0 7px;
@@ -893,7 +893,7 @@
             border-bottom: 1px solid rgba($color: #000, $alpha: 0.1);
             &:nth-child(1) {
                 font-weight: 500;
-                color: #ffbc13;
+                color: #183c56;
             }
             &:nth-child(2) .job-type {
                 color: #00CB74;
@@ -1207,7 +1207,7 @@
                 }
                 .time {
                     font-size: 13px;
-                    color: rgba($color: #ffbc13, $alpha: 0.6);
+                    color: rgba($color: #183c56, $alpha: 0.6);
                     margin-bottom: 15px;
                 }
             }

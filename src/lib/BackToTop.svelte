@@ -38,7 +38,7 @@
 		font-size: 25px;
 		cursor: pointer;
 		border-radius: 50%;
-		background: #FFD500;
+		background: #183c57;
 		transition: all 0.3s ease-in-out;
      display: none;
 	}

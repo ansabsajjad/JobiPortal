@@ -6,7 +6,7 @@
     background: #fff;
     border-radius: 10px;
     position: relative;
-    border: 1px solid rgba($color: #ffbc13, $alpha: 0.1);
+    border: 1px solid rgba($color: #183c56, $alpha: 0.1);
     @include transition (0.2s);
     &:hover {
         box-shadow: 0px 20px 35px rgba(22, 105, 70, 0.05);
@@ -82,7 +82,7 @@
             font-size: 12px;
             font-weight: 500;
             color: rgba($color: #000, $alpha: 0.55);
-            background: rgba($color: #31795A, $alpha: 0.1);
+            background: rgba($color: #f5b41c, $alpha: 0.1);
             &.more {
                 background: $color-two;
                 color: #000;
