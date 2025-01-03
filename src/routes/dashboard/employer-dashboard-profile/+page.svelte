@@ -41,59 +41,178 @@
 					</div>
 					<!-- /.user-avatar-setting -->
 					<div class="dash-input-wrapper mb-30">
-						<label for="">Employer Name*</label>
-						<input type="text" placeholder="Zubayer Hasan" />
+						<label for="">Company Name*</label>
+						<input type="text" placeholder="Enter Company Name" />
 					</div>
 					<!-- /.dash-input-wrapper -->
 					<div class="row">
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
 								<label for="">Email*</label>
-								<input type="email" placeholder="companyinc@gmail.com" />
+								<input type="email" placeholder="Enter Company Email" />
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
 								<label for="">Website*</label>
-								<input type="text" placeholder="http://somename.come" />
+								<input type="text" placeholder="Enter Company Website" />
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
-								<label for="">Founded Date*</label>
+								<label for="">Date of Inception*</label>
 								<input type="date" />
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
-								<label for="">Company Size*</label>
-								<input type="text" placeholder="700" />
+									<label for="">Company Size*</label>
+									<select class="nice-select">
+										<option value="0-1">0 - 1 - Employees</option>
+										<option value="2-10">2 - 10 Employees</option>
+										<option value="11-50">11 - 50 Employees</option>
+										<option value="51-200">51 - 200 Employees</option>
+										<option value="201-500">201 - 500 Employees</option>
+										<option value="501-1000">501 -1000 Employees</option>
+										<option value="1001-5000">1001 - 5000 Employees</option>
+										<option value="5001-10000">5001 - 10000 Employees</option>
+										<option value="10001-15000">10001 - 15000 employees</option>
+										<option value="15001-20000">15001 - 20000 employees</option>
+										<option value="20000+">20000+ employees</option>
+
+							
+									</select>
+								</div>
+								<!-- /.dash-input-wrapper -->
 							</div>
 							<!-- /.dash-input-wrapper -->
-						</div>
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
 								<label for="">Phone Number*</label>
-								<input type="tel" placeholder="+880 01723801729" />
+								<input type="tel" placeholder="+92 --- ---- ---" />
+							</div>
+							<div class="dash-input-wrapper mb-30">
+								<label for="">No. of Offices/Branches</label>
+								<input type="number" placeholder="0" />
+							</div>
+
+							<div class="dash-input-wrapper mb-30">
+								<label for="">Services/Products</label>
+								<input type="tel" placeholder="Enter Services/Products" />
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
-								<label for="">Category*</label>
-								<input type="text" placeholder="Account, Finance, Marketing" />
+								<label for="">Industry*</label>
+								<select class="nice-select">
+									<option value="Select the Industry" selected hidden>Select the Industry</option>
+									<option value="Accounting/Taxation">Accounting/Taxation</option>
+									<option value="Advertising/Public Relations">Advertising/Public Relations</option>
+									<option value="Aerospace">Aerospace</option>
+									<option value="Agriculture/Fertilizer/Pesticide">Agriculture/Fertilizer/Pesticide</option>
+									<option value="Apparel/Clothing">Apparel/Clothing</option>
+									<option value="Architecture/Interior Design">Architecture/Interior Design</option>
+									<option value="Arts/Entertainment">Arts/Entertainment</option>
+									<option value="Attorney/Law Firms/Legal">Attorney/Law Firms/Legal</option>
+									<option value="Auto Dealer">Auto Dealer</option>
+									<option value="Auto Manufacturer">Auto Manufacturer</option>
+									<option value="Auto Mobile">Auto Mobile</option>
+									<option value="Aviation/Airline">Aviation/Airline</option>
+									<option value="Banking/Financial Services">Banking/Financial Services</option>
+									<option value="Books, Magazines & Newspapers">Books, Magazines & Newspapers</option>
+									<option value="Broadcasters, Radio/TV">Broadcasters, Radio/TV</option>
+									<option value="Builders/General Contractors">Builders/General Contractors</option>
+									<option value="Building Materials & Equipment">Building Materials & Equipment</option>
+									<option value="Business Development">Business Development</option>
+									<option value="Business Process Outsourcing (BPO)">Business Process Outsourcing (BPO)</option>
+									<option value="Cable & Satellite TV Production & Distribution">Cable & Satellite TV Production & Distribution</option>
+									<option value="Call Center">Call Center</option>
+									<option value="Chemicals">Chemicals</option>
+									<option value="Civil Servants/Public Officials">Civil Servants/Public Officials</option>
+									<option value="Clergy & Religious Organizations">Clergy & Religious Organizations</option>
+									<option value="Computer">Computer</option>
+									<option value="Construction/Cement/Metals">Construction/Cement/Metals</option>
+									<option value="Consultancy">Consultancy</option>
+									<option value="Courier/Logistics">Courier/Logistics</option>
+									<option value="Cruise Ships & Lines">Cruise Ships & Lines</option>
+									<option value="Culture/Performance Art">Culture/Performance Art</option>
+									<option value="Defense">Defense</option>
+									<option value="E-Commerce/E-Business">E-Commerce/E-Business</option>
+									<option value="Education/Training">Education/Training</option>
+									<option value="Electronics">Electronics</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Environment">Environment</option>
+									<option value="Event Management">Event Management</option>
+									<option value="Farming">Farming</option>
+									<option value="Fashion">Fashion</option>
+									<option value="Fast Moving Consumer Goods (FMCG)">Fast Moving Consumer Goods (FMCG)</option>
+									<option value="Fishing">Fishing</option>
+									<option value="Food & Beverages">Food & Beverages</option>
+									<option value="Food Processing & Sales">Food Processing & Sales</option>
+									<option value="Forestry/Forest Products">Forestry/Forest Products</option>
+									<option value="Garbage Collection/Waste Management">Garbage Collection/Waste Management</option>
+									<option value="Gems & Jewelery">Gems & Jewelery</option>
+									<option value="Health & Fitness">Health & Fitness</option>
+									<option value="Healthcare/Hospital/Medical">Healthcare/Hospital/Medical</option>
+									<option value="Hotel/Motel/Restaurants">Hotel/Motel/Restaurants</option>
+									<option value="Importers/Distributors/Exporters">Importers/Distributors/Exporters</option>
+									<option value="Information Technology">Information Technology</option>
+									<option value="Insurance/Takaful">Insurance/Takaful</option>
+									<option value="Investments & Savings">Investments & Savings</option>
+									<option value="Leisure">Leisure</option>
+									<option value="Livestock">Livestock</option>
+									<option value="Manufacturing">Manufacturing</option>
+									<option value="Medical Supplies">Medical Supplies</option>
+									<option value="Media/Communications">Media/Communications</option>
+									<option value="Mining/Petroleum">Mining/Petroleum</option>
+									<option value="Music & Production">Music & Production</option>
+									<option value="NGO/Foundations/Non Profits/Social Services">NGO/Foundations/Non Profits/Social Services</option>
+									<option value="Oil & Gas/Natural Resources">Oil & Gas/Natural Resources</option>
+									<option value="Packaging">Packaging</option>
+									<option value="Personal Care and Services">Personal Care and Services</option>
+									<option value="Pharmaceuticals/Clinical Research">Pharmaceuticals/Clinical Research</option>
+									<option value="Poultry/Meat">Poultry/Meat</option>
+									<option value="Power/Energy">Power/Energy</option>
+									<option value="Project Management">Project Management</option>
+									<option value="Publishing/Printing">Publishing/Printing</option>
+									<option value="Real Estate/Property">Real Estate/Property</option>
+									<option value="Recruitment/Employment Firms">Recruitment/Employment Firms</option>
+									<option value="Retail/Wholesale">Retail/Wholesale</option>
+									<option value="Security/Law Enforcement">Security/Law Enforcement</option>
+									<option value="Shipping/Marine/Ports">Shipping/Marine/Ports</option>
+									<option value="Showbiz">Showbiz</option>
+									<option value="Sport">Sport</option>
+									<option value="Telecommunication/ISP">Telecommunication/ISP</option>
+									<option value="Textiles/Garments">Textiles/Garments</option>
+									<option value="Tiles & Ceramics">Tiles & Ceramics</option>
+									<option value="Timber, Logging & Paper Mills">Timber, Logging & Paper Mills</option>
+									<option value="Tobacco">Tobacco</option>
+									<option value="Travel/Tourism/Transportation">Travel/Tourism/Transportation</option>
+									<option value="Warehousing">Warehousing</option>
+								</select>
+							</div>
+
+							<div class="dash-input-wrapper mb-30">
+								<label for="">Workplace Module*</label>
+								<select class="nice-select">
+									<option value="" selected hidden>Workplace Module</option>
+									<option value="On-site">On-site</option>
+									<option value="Hybrid">Hybrid</option>
+									<option value="Remote">Remote</option>
+								</select>
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
 					</div>
 					<div class="dash-input-wrapper">
 						<label for="">About Company*</label>
-						<textarea class="size-lg" placeholder="Write something interesting about you...."
+						<textarea class="size-lg" placeholder="Write something interesting about you...." maxlength="500"
 						></textarea>
-						<div class="alert-text">Brief description for your company. URLs are hyperlinked.</div>
+						<div class="alert-text">Brief description for your company. (Max 500 characters)</div>
 					</div>
 					<!-- /.dash-input-wrapper -->
 				</div>
@@ -121,8 +240,8 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="dash-input-wrapper mb-25">
-								<label for="">Address*</label>
-								<input type="text" placeholder="Cowrasta, Chandana, Gazipur Sadar" />
+								<label for="">Office Address*</label>
+								<input type="text" placeholder="Enter Company Address" />
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
@@ -139,17 +258,7 @@
 									<option>Argentina</option>
 									<option>Armenia</option>
 									<option>Australia</option>
-									<option>Austria</option>
-									<option>Azerbaijan</option>
-									<option>Bahamas</option>
-									<option>Bahrain</option>
-									<option>Bangladesh</option>
-									<option>Barbados</option>
-									<option>Belarus</option>
-									<option>Belgium</option>
-									<option>Belize</option>
-									<option>Benin</option>
-									<option>Bhutan</option>
+									
 								</select>
 							</div>
 							<!-- /.dash-input-wrapper -->
@@ -168,13 +277,7 @@
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
-						<div class="col-lg-3">
-							<div class="dash-input-wrapper mb-25">
-								<label for="">Zip Code*</label>
-								<input type="number" placeholder="1708" />
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
+						
 						<div class="col-lg-3">
 							<div class="dash-input-wrapper mb-25">
 								<label for="">State*</label>
@@ -186,6 +289,13 @@
 									<option>Mumbai</option>
 									<option>Bangalore</option>
 								</select>
+							</div>
+							<!-- /.dash-input-wrapper -->
+						</div>
+						<div class="col-lg-3">
+							<div class="dash-input-wrapper mb-25">
+								<label for="">Zip Code*</label>
+								<input type="number" placeholder="1708" />
 							</div>
 							<!-- /.dash-input-wrapper -->
 						</div>
