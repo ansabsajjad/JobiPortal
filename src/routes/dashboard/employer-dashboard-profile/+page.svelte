@@ -13,6 +13,8 @@
 	onMount(() => {
 		niceSelect();
 	});
+	let companySize = '';
+	let industry = '';
 </script>
 
 <div class="main-page-wrapper">
@@ -69,9 +71,10 @@
 						</div>
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
-									<label for="">Company Size*</label>
-									<select class="nice-select">
-										<option value="0-1">0 - 1 - Employees</option>
+								<label for="">Company Size*</label>
+								<select class="nice-select" bind:value={companySize}>
+									<option value="">Select Size</option>
+									<option value="0-1">0 - 1 Employees</option>
 										<option value="2-10">2 - 10 Employees</option>
 										<option value="11-50">11 - 50 Employees</option>
 										<option value="51-200">51 - 200 Employees</option>
@@ -108,8 +111,8 @@
 						<div class="col-md-6">
 							<div class="dash-input-wrapper mb-30">
 								<label for="">Industry*</label>
-								<select class="nice-select">
-									<option value="Select the Industry" selected hidden>Select the Industry</option>
+								<select class="nice-select" bind:value={industry}>
+									<option value="">Select Industry</option>
 									<option value="Accounting/Taxation">Accounting/Taxation</option>
 									<option value="Advertising/Public Relations">Advertising/Public Relations</option>
 									<option value="Aerospace">Aerospace</option>
@@ -199,10 +202,12 @@
 							<div class="dash-input-wrapper mb-30">
 								<label for="">Workplace Module*</label>
 								<select class="nice-select">
-									<option value="" selected hidden>Workplace Module</option>
+									<option value="" selected hidden>Select Module</option>
 									<option value="On-site">On-site</option>
 									<option value="Hybrid">Hybrid</option>
 									<option value="Remote">Remote</option>
+									<option value="Remote">Felexible</option>
+
 								</select>
 							</div>
 							<!-- /.dash-input-wrapper -->
@@ -216,23 +221,217 @@
 					</div>
 					<!-- /.dash-input-wrapper -->
 				</div>
-				<!-- /.card-box -->
+				
+				
+
+
+				<!-- /.Company details -->
 
 				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Social Media</h4>
+					<h4 class="dash-title-three">Company Contact Information</h4>
 
-					<div class="dash-input-wrapper mb-20">
-						<label for="">Network 1</label>
-						<input type="text" placeholder="https://www.facebook.com/zubayer0145" />
+					<div class="row">
+						<div class="col-md-6">
+							<div class="dash-input-wrapper mb-30">
+						<label for="">Official Email Address</label>
+						<input type="email" placeholder="example@company.com" />
 					</div>
-					<!-- /.dash-input-wrapper -->
-					<div class="dash-input-wrapper mb-20">
-						<label for="">Network 2</label>
-						<input type="text" placeholder="https://twitter.com/FIFAcom" />
-					</div>
-					<!-- /.dash-input-wrapper -->
-					<a href="#!" class="dash-btn-one"><i class="bi bi-plus"></i> Add more link</a>
 				</div>
+					<!-- /.dash-input-wrapper -->
+						<div class="col-md-6">
+							<div class="dash-input-wrapper mb-30">
+						<label for="">Official Website Address</label>
+						<input type="text" placeholder="https://www.company.com" />
+					</div>
+				</div>
+					<!-- /.dash-input-wrapper -->
+						<div class="col-md-6">
+							<div class="dash-input-wrapper mb-30">
+						<label for="">Company LinkedIn Page</label>
+						<input type="text" placeholder="https://www.linkedin.com/company/company-name" />
+					</div>
+				</div>
+					<!-- /.dash-input-wrapper -->
+						<div class="col-md-6">
+							<div class="dash-input-wrapper mb-30">
+						<label for="">Registered Phone Number</label>
+						<input type="tel" placeholder="+1 234 567 890" />
+					</div>
+				</div>
+					<!-- /.dash-input-wrapper -->
+					</div>
+				</div>
+
+
+					<!-- /.Company Representative Information -->
+
+					<div class="bg-white card-box border-20 mt-40">
+						<h4 class="dash-title-three">Company Representative Information</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Name of CEO</label>
+								<input type="text" placeholder="John Doe" />
+							</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="dash-input-wrapper mb-30">
+								<label for="">Official Email Address</label>
+								<input type="email" placeholder="ceo@company.com" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Personal Email Address</label>
+								<input type="email" placeholder="johndoe@gmail.com" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Official Mobile Number</label>
+								<input type="tel" placeholder="+1 234 567 890" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Personal Mobile Number</label>
+								<input type="tel" placeholder="+1 234 567 890" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">LinkedIn Profile</label>
+								<input type="text" placeholder="https://www.linkedin.com/in/johndoe/" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Name of HR Head/Manager</label>
+								<input type="text" placeholder="Jane Doe" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Official Email Address</label>
+								<input type="email" placeholder="hr@company.com" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Personal Email Address</label>
+								<input type="email" placeholder="janedoe@gmail.com" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Official Mobile Number</label>
+								<input type="tel" placeholder="+1 234 567 890" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">Personal Mobile Number</label>
+								<input type="tel" placeholder="+1 234 567 890" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+							<div class="col-md-6">
+								<div class="dash-input-wrapper mb-30">
+								<label for="">LinkedIn Profile</label>
+								<input type="text" placeholder="https://www.linkedin.com/in/janedoe/" />
+							</div>
+						</div>
+							<!-- /.dash-input-wrapper -->
+						
+						</div>
+					</div>
+				
+
+
+						<!-- /.Account Holder Information -->
+
+						<div class="bg-white card-box border-20 mt-40">
+							<h4 class="dash-title-three">Account Holder Information</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">First Name*</label>
+										<input type="text" placeholder="John" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Last Name*</label>
+										<input type="text" placeholder="Doe" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Designation*</label>
+										<input type="text" placeholder="CEO" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Department*</label>
+										<input type="text" placeholder="HR" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Official Email Address*</label>
+										<input type="email" placeholder="john.doe@company.com" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Personal Email Address</label>
+										<input type="email" placeholder="johndoe@gmail.com" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Official Mobile Number*</label>
+										<input type="tel" placeholder="+1 234 567 890" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">Personal Mobile Number</label>
+										<input type="tel" placeholder="+1 234 567 890" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+								<div class="col-md-6">
+									<div class="dash-input-wrapper mb-30">
+										<label for="">LinkedIn Profile</label>
+										<input type="text" placeholder="https://www.linkedin.com/in/johndoe/" />
+									</div>
+								</div>
+									<!-- /.dash-input-wrapper -->
+							</div>
+						</div>
+				
+				
+				
+				<!-- /.card-box -->
+
+				
 				<!-- /.card-box -->
 
 				<div class="bg-white card-box border-20 mt-40">
@@ -329,156 +528,7 @@
 				</div>
 				<!-- /.card-box -->
 
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Members</h4>
-
-					<div class="dash-input-wrapper">
-						<label for="">Add & Remove Member</label>
-					</div>
-
-					<div class="accordion dash-accordion-one" id="accordionOne">
-						<div class="accordion-item">
-							<div class="accordion-header" id="headingOne">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseOne"
-									aria-expanded="false"
-									aria-controls="collapseOne"
-								>
-									Add Member 1
-								</button>
-							</div>
-							<div
-								id="collapseOne"
-								class="accordion-collapse collapse"
-								aria-labelledby="headingOne"
-								data-bs-parent="#accordionOne"
-							>
-								<div class="accordion-body">
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="dash-input-wrapper mb-30 md-mb-10">
-												<label for="">Name*</label>
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-										<div class="col-lg-10">
-											<div class="dash-input-wrapper mb-30">
-												<input type="text" placeholder="Product Designer (Google)" />
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="dash-input-wrapper mb-30 md-mb-10">
-												<label for="">Designation*</label>
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-										<div class="col-lg-10">
-											<div class="dash-input-wrapper mb-30">
-												<input type="text" placeholder="Account Manager" />
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="dash-input-wrapper mb-30 md-mb-10">
-												<label for="">Email*</label>
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-										<div class="col-lg-10">
-											<div class="dash-input-wrapper mb-30">
-												<input type="email" placeholder="newmmwber@gmail.com" />
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-									</div>
-
-									<div class="d-flex justify-content-end mb-20">
-										<a href="#!" class="dash-btn-one">Remove</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<div class="accordion-header" id="headingTwo">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo"
-									aria-expanded="false"
-									aria-controls="collapseTwo"
-								>
-									Add Member 2
-								</button>
-							</div>
-							<div
-								id="collapseTwo"
-								class="accordion-collapse collapse show"
-								aria-labelledby="headingTwo"
-								data-bs-parent="#accordionOne"
-							>
-								<div class="accordion-body">
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="dash-input-wrapper mb-30 md-mb-10">
-												<label for="">Name*</label>
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-										<div class="col-lg-10">
-											<div class="dash-input-wrapper mb-30">
-												<input type="text" placeholder="Product Designer (Google)" />
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="dash-input-wrapper mb-30 md-mb-10">
-												<label for="">Designation*</label>
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-										<div class="col-lg-10">
-											<div class="dash-input-wrapper mb-30">
-												<input type="text" placeholder="Account Manager" />
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="dash-input-wrapper mb-30 md-mb-10">
-												<label for="">Email*</label>
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-										<div class="col-lg-10">
-											<div class="dash-input-wrapper mb-30">
-												<input type="email" placeholder="newmmwber@gmail.com" />
-											</div>
-											<!-- /.dash-input-wrapper -->
-										</div>
-									</div>
-
-									<div class="d-flex justify-content-end mb-20">
-										<a href="#!" class="dash-btn-one">Remove</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /.dash-accordion-one -->
-					<a href="#!" class="dash-btn-one"><i class="bi bi-plus"></i> Add Another Member</a>
-				</div>
+				
 				<!-- /.card-box -->
 
 				<div class="button-group d-inline-flex align-items-center mt-30">
