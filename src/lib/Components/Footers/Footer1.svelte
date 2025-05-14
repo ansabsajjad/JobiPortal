@@ -9,7 +9,7 @@
 						</a>
 					</div>
 					<!-- logo -->
-					<a href="#!" class="email fw-500">jobisupport@new.com</a>
+					<a href="#!" class="email fw-500">hrtalentarena@gmail.com</a>
 					<img
 						src="/assets/images/lazy.svg"
 						data-src="/assets/images/shape/shape_28.svg"

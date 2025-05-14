@@ -1,5 +1,5 @@
 <script>
-	import Model1 from './../../lib/Components/Model/Model1.svelte';
+	import Model1 from '../../lib/Components/Model/Model1.svelte';
 	import BackToTop from '$lib/BackToTop.svelte';
 	import LazyImageLoader from '$lib/LazyImageLoader.svelte';
 	import Preloader from '$lib/Preloader.svelte';
@@ -77,13 +77,13 @@
 										<div class="col-12">
 											<div class="input-group-meta position-relative mb-25">
 												<label for="">Name*</label>
-												<input type="text" placeholder="Rashed Kabir" />
+												<input type="text" placeholder="Enter Your Name" />
 											</div>
 										</div>
 										<div class="col-12">
 											<div class="input-group-meta position-relative mb-25">
 												<label for="">Email*</label>
-												<input type="email" placeholder="rshdkabir@gmail.com" />
+												<input type="email" placeholder="Enter Your Email" />
 											</div>
 										</div>
 										<div class="col-12">
@@ -125,14 +125,18 @@
 									<div class="row">
 										<div class="col-12">
 											<div class="input-group-meta position-relative mb-25">
-												<label for="">Name*</label>
-												<input type="text" placeholder="Zubayer Hasan" />
+												<label for="">First Name*</label>
+												<input type="text" placeholder="Enter Your First Name" />
+											</div>
+											<div class="input-group-meta position-relative mb-25">
+												<label for="">Last Name*</label>
+												<input type="text" placeholder="Enter Your Last Name" />
 											</div>
 										</div>
 										<div class="col-12">
 											<div class="input-group-meta position-relative mb-25">
 												<label for="">Email*</label>
-												<input type="email" placeholder="zubayerhasan@gmail.com" />
+												<input type="email" placeholder="Enter Your Email" />
 											</div>
 										</div>
 										<div class="col-12">

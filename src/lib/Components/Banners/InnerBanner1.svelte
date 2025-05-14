@@ -14,6 +14,7 @@
 						</div>
 					</slot>
 				</div>
+				
 				<div class="position-relative">
 					<div class="row">
 						<div class="col-xl-9 col-lg-8 m-auto">
